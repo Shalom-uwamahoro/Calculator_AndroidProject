@@ -16,96 +16,96 @@
         android:layout_height="match_parent">
 
 
+        <EditText
+            android:id="@+id/etNum1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:ems="10"
+            android:hint="Num 1"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/etNum1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:ems="10"
-        android:hint="Num 1"
-        android:inputType="numberDecimal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/etNum2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="128dp"
+            android:ems="10"
+            android:hint="Num 2"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.176" />
 
-    <EditText
-        android:id="@+id/etNum2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Num 2"
-        android:inputType="numberDecimal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.176" />
+        <Button
+            android:id="@+id/btnSubstract"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="-"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toStartOf="@+id/btnMultiply"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnAdd"
+            app:layout_constraintTop_toBottomOf="@+id/etNum2" />
 
-    <Button
-        android:id="@+id/btnSubstract"
-        android:layout_width="70dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="-"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toStartOf="@+id/btnMultiply"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnAdd"
-        app:layout_constraintTop_toBottomOf="@+id/etNum2" />
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="+"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toStartOf="@+id/btnSubstract"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNum2" />
 
-    <Button
-        android:id="@+id/btnAdd"
-        android:layout_width="70dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="+"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toStartOf="@+id/btnSubstract"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etNum2" />
+        <Button
+            android:id="@+id/btnDivide"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="%"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnMultiply"
+            app:layout_constraintTop_toBottomOf="@+id/etNum2" />
 
-    <Button
-        android:id="@+id/btnDivide"
-        android:layout_width="70dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="%"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnMultiply"
-        app:layout_constraintTop_toBottomOf="@+id/etNum2" />
+        <Button
+            android:id="@+id/btnMultiply"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="@string/x"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toStartOf="@+id/btnDivide"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnSubstract"
+            app:layout_constraintTop_toBottomOf="@+id/etNum2" />
 
-    <Button
-        android:id="@+id/btnMultiply"
-        android:layout_width="70dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="x"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toStartOf="@+id/btnDivide"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnSubstract"
-        app:layout_constraintTop_toBottomOf="@+id/etNum2" />
-
-    <TextView
-        android:id="@+id/tvResult"
-        android:layout_width="100dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="292dp"
-        android:text="result"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="100dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/Result"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
